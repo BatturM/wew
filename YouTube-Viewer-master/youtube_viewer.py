@@ -172,8 +172,6 @@ def viewVideo(position):
                 driver = webdriver.Chrome(
                     executable_path=driver_path, options=options)
 
-                driver.get(url)
-
                 if method == 1:
                     find_video = WebDriverWait(driver, 50).until(EC.element_to_be_clickable(
                         (By.XPATH, f'//*[@title="{query[1]}"]')))
