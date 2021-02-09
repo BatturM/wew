@@ -250,7 +250,6 @@ if __name__ == '__main__':
         print('{} OS is not supported.'.format(OSNAME))
         sys.exit()
 
-    urls = load_url()
     queries = load_search()
 
     views = int(input(bcolors.OKBLUE + 'Amount of views : ' + bcolors.ENDC))
